@@ -1,0 +1,54 @@
+#main-weather {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+@media (max-width: 576px) {
+    body {
+        margin: 0;
+    }
+    #main-weather {
+        display: flex;
+        flex-direction: column;
+    }
+    .weatherInfo {
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        padding: 1rem;
+    }
+    .weatherInfo span{
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .formCard {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .background {
+        position: absolute;
+        top: 35%;
+        left: 16%;
+        opacity: 0.8;
+    }
+
+    #search {
+        position: fixed;
+        top: 5%;
+        right: 15%;
+
+        background-color: lightblue;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+    .nav-weather {
+        padding: 0;
+    }
+    #temp {
+        display: flex;
+        flex-direction: column;
+    }
+}

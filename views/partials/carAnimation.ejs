@@ -1,0 +1,21 @@
+<div id="carContainer" style="position: relative;"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script>
+<script>
+    // ID des Container-Elements
+    const container = document.getElementById('carContainer');
+  
+    // Pfad zur Lottie JSON-Datei
+    const animationData = 'animations/summer-trip.json';
+  
+    // Lade und zeige die Animation
+    const anim = lottie.loadAnimation({
+      container: container,
+      renderer: 'svg', // Wähle den Renderer (z. B. 'svg' oder 'canvas')
+      loop: true,
+      autoplay: true,
+      path: animationData // Pfad zur Lottie JSON-Datei
+    });
+    console.log("yes");
+  </script>
+  
+  
